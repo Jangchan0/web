@@ -1,0 +1,99 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #c7e2f5;
+}
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 48px;
+  background-color: rgba(179, 179, 179, 0.8);
+  z-index: 2;
+  text-align: center;
+  
+}
+.custom-header {
+  position: absolute;
+  left: 30%;
+  z-index: 1;
+}
+body, header, span, .say {
+  padding-top: 20px;
+  font-size: 25px;
+}
+.container {
+  border-radius: 10px;  
+  padding: 20px;
+  width: 400px;
+  background-color: #EBEFF3;
+  z-index: 3
+}
+.question {
+  list-style: none;
+  border-left: 3px solid black;
+  padding: 0 0 0 40px;
+}
+li {
+  padding-top: 10px;
+}
+li:first-child {
+  padding-top: 0px;
+}
+li:last-child {
+  padding-bottom: 30px;
+}
+input[type="text"] {
+  width: 250px;
+  height: 20px;
+}
+.photo {
+  border-radius: 10px;
+  height: 300px;
+  background-color: #dee9ed;
+  position: relative;
+  overflow:hidden;
+}
+
+.photo:hover > .hex-text {
+  opacity: 1;
+}
+.me {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.hex-text {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  padding: 5px 10px;
+  color: white;
+  background-color: #cdcbcb;
+  font-size: 20px;
+}
+
+.info-box {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.like-button {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #EBEFF3;
+  cursor: pointer;
+}
+.update-date {
+  font-size: 20px;
+
+}
